@@ -62,4 +62,5 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 
-*.cpp linguist-language=c++
+*.h linguist-language=cpp
+*.cpp linguist-language=cpp
