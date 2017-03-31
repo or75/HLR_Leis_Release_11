@@ -67,10 +67,10 @@ void SVC_Sound()
 
 	MSG_EndBitReading( MSG_Buffer );
 
-	if ( !PathFree( origin ) )
-	{
-		g_Sound.AddSound( GetTickCount() , origin );
-	}
+//	if ( !PathFree( origin ) )
+//	{
+	g_Sound.AddSound( GetTickCount() , origin );
+//	}
 
 	MSG_RestoreReadCount();
 	pSVC_sound();
@@ -99,10 +99,10 @@ void SVC_SpawnStaticSound()
 	pitch = MSG_ReadByte();
 	fFlags = MSG_ReadByte();
 
-	if ( !PathFree( pos ) )
-	{
-		g_Sound.AddSound( GetTickCount() , pos );
-	}
+//	if ( !PathFree( pos ) )
+//	{
+	g_Sound.AddSound( GetTickCount() , pos );
+//	}
 
 	MSG_EndBitReading( MSG_Buffer );
 
